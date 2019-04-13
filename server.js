@@ -8,7 +8,7 @@ app.get('*', function(req, res) {
   // load the single view file (angular will handle the page changes on the front-end)
 });
 
-app.listen(PORT, () => {
-  console.log(`listening on http://localhost:${PORT}!`);
+app.listen(port, () => {
+  console.log(`listening on http://localhost:${port}!`);
 });
 
