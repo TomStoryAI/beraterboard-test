@@ -111,7 +111,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\angular.json" (
   pushd %DEPLOYMENT_TARGET%
   :: call :ExecuteCmd !NPM_CMD! run build
   :: If the above command fails comment above and uncomment below one
-  call /node_modules/.bin/ng build --prod
+  call "%DEPLOYMENT_TARGET%\node_modules\.bin\ng build --prod
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
